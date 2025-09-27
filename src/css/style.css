@@ -316,4 +316,67 @@ svg {
 }
 
 
+/* Body */
 
+/* Media Cards */
+
+.Component-MediaGrid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.row {
+  flex-direction: column;
+  width: 80%;
+}
+
+.media-card {
+  width: 80%;
+  height: auto;
+}
+
+.media-link,
+.media-link .mediacard-title {
+  color: black;
+  text-decoration: none;
+}
+
+.media-link:hover .mediacard-title h3 {
+  color: var(--bs-crete) !important;
+}
+
+.mediacard-imageContainer {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.mediacard-title {
+  text-decoration: none;
+}
+
+.contact {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer-img {
+  width: 100%;
+}
+
+
+@media screen and (min-width: 768px) {
+  .Component-MediaGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 80%;
+    gap: 1rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    grid-auto-rows: 1fr;
+    align-items: stretch;
+  }
+}

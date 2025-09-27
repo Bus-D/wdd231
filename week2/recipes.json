@@ -1,0 +1,55 @@
+[
+    {
+        "name": "Chocolate Chip Cookies",
+        "ingredients": [
+            {
+                "ing1": "1lb butter - softened",
+                "ing2": "1 1/2 cup Brown Sugar",
+                "ing3": "1 cup white sugar",
+                "ing4": "3 eggs",
+                "ing5": "2 tsp vanilla",
+                "ing6": "1 1/2 tsp Baking Soda",
+                "ing7": "1/2 tsp salt",
+                "ing8": "5 cup flour (we like 3 cups white and 2 cups whole wheat",
+                "ing9": "2 cups semi-sweet chocolate chips",
+                "ing10": "1-2 cups shredded coconut"
+            }
+        ],
+        "steps": [
+            {
+                "step1": "1. Cream the butter and sugar together, then beat in the eggs and vanilla",
+                "step2": "2. Mix in salt, soda and flour",
+                "step3": "3. Add chocolate chips and coconut",
+                "step4": "4. Bake 8-10 minutes at 350 F"
+            }
+        ]
+        
+    },
+
+    {
+       "name": "Chocolate Chip Cookies",
+        "ingredients": [
+            {
+                "ing1": "1lb butter - softened",
+                "ing2": "1 1/2 cup Brown Sugar",
+                "ing3": "1 cup white sugar",
+                "ing4": "3 eggs",
+                "ing5": "2 tsp vanilla",
+                "ing6": "1 1/2 tsp Baking Soda",
+                "ing7": "1/2 tsp salt",
+                "ing8": "5 cup flour (we like 3 cups white and 2 cups whole wheat",
+                "ing9": "2 cups semi-sweet chocolate chips",
+                "ing10": "1-2 cups shredded coconut"
+            }
+        ],
+        "steps": [
+            {
+                "step1": "1. Cream the butter and sugar together, then beat in the eggs and vanilla",
+                "step2": "2. Mix in salt, soda and flour",
+                "step3": "3. Add chocolate chips and coconut",
+                "step4": "4. Bake 8-10 minutes at 350 F"
+            }
+        ]
+         
+    }
+]
