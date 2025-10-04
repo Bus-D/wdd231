@@ -1,0 +1,39 @@
+/* Disclaimer */
+.disclaimer {
+  width: 90%;
+  justify-self: center;
+}
+
+/* Title and logo styling */
+
+.site-title {
+  display: flex;
+  align-items: center;
+}
+
+.site-title > span {
+  font-size: 1rem;
+  margin-left: 0.3em;
+  color: white;
+  text-decoration: none;
+}
+
+.site-title > svg {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.global-header > a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo {
+  height: 0;
+  width: 0;
+  margin: 0.5em;
+  display: inline-block;
+  border-top: 34px solid var(--bs-light-green);
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+}

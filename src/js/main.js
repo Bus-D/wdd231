@@ -1,8 +1,14 @@
 import { getParkData } from "./parkService.mjs";
 import { parkInfoLinks } from "./parkService.mjs";
 
-
-const parkData = getParkData();
+async function init() {
+    const parkData = await getParkData();
+    setHeaderInfo(parkData);
+    setParkIntro(parkData);
+    mediaCardTemplate(parkInfoLinks);
+    setParkFooter(parkData);
+}
+init();
 
 function setHeaderInfo(parkData) {
     // Disclaimer
@@ -12,7 +18,7 @@ function setHeaderInfo(parkData) {
 
     // Update Hero Info
     function parkInfoTemplate(info) {
-        return `<a href="/" class="hero-banner-title">${info.name}</a>
+        return `<a href="/" class="hero-banner-title">${info.fullName}</a>
         <p class="hero-banner-text">
             <span>${info.designation}</span>
             <span>${info.states}</span>`
@@ -33,8 +39,6 @@ function setHeaderInfo(parkData) {
     heroImg.src = parkData.images[0].url;
     heroImg.alt = parkData.images[0].altText;
 }
-
-setHeaderInfo(parkData);
 
 // Body
 
@@ -62,7 +66,6 @@ function mediaCardTemplate(parkInfoLinks) {
     </div>
     `;
 }
-mediaCardTemplate(parkInfoLinks);
 
 function setParkIntro(parkData) {
     const title = document.querySelector(".into");
@@ -103,7 +106,7 @@ function footerTemplate(info) {
         </div>
         <p>${voice}</p>
     </section>
-    <img class="footer-img" href="images/topo_pattern.png" alt="topographical pattern background"
+    <img class="footer-img" src="images/topo_pattern.png" alt="topographical pattern background"
     `;
 }
 
@@ -115,5 +118,3 @@ function setParkFooter(parkData) {
     }
    
 }
-
-setParkFooter(parkData);
