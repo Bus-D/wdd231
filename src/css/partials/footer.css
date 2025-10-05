@@ -1,0 +1,23 @@
+#park-footer {
+    background-image: url("../../images/topo_pattern.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    flex-direction: flex-start;
+    align-items: flex-start;
+}
+
+#park-footer .contact {
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#park-footer .contact h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.25rem;
+}
+

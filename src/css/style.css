@@ -2,6 +2,6 @@
 @import "partials/global.css";
 @import "partials/header.css";
 @import "partials/utilities.css";
-/* @import "partials/footer"; */
+@import "partials/footer.css";
 /* @import "partials/blocks"; */
 @import "home.css";

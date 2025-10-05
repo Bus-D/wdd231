@@ -5,8 +5,9 @@ async function init() {
     const parkData = await getParkData();
     setHeaderInfo(parkData);
     setParkIntro(parkData);
-    mediaCardTemplate(parkInfoLinks);
+    mediaCardTemplate(parkInfoLinks, parkData);
     setParkFooter(parkData);
+
 }
 init();
 
@@ -42,7 +43,7 @@ function setHeaderInfo(parkData) {
 
 // Body
 
-function mediaCardTemplate(parkInfoLinks) {
+function mediaCardTemplate(parkInfoLinks, parkData) {
     const mediaCard = document.querySelector(".info");
 
     const cardsHtml = parkInfoLinks.map(link => {
@@ -68,7 +69,7 @@ function mediaCardTemplate(parkInfoLinks) {
 }
 
 function setParkIntro(parkData) {
-    const title = document.querySelector(".into");
+    const title = document.querySelector(".intro");
     title.innerHTML = `<h1>${parkData.fullName}</h1>
     <p>${parkData.description}</p>`;
     
@@ -104,9 +105,9 @@ function footerTemplate(info) {
             <p>${mailing.line1}</p>
             <p>${mailing.city}, ${mailing.stateCode} ${mailing.postalCode}</p>
         </div>
+        <h4>Phone</h4>
         <p>${voice}</p>
     </section>
-    <img class="footer-img" src="images/topo_pattern.png" alt="topographical pattern background"
     `;
 }
 
