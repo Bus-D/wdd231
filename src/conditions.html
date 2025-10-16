@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
     <link rel="stylesheet" href="css/style.css" />
-    <script type="module" src="js/main.js" defer></script>
+    <script type="module" src="js/conditions.js" defer></script>
   </head>
   <body>
     <p class="disclaimer">
@@ -156,11 +156,27 @@
     </header>
     
     <main id="main">
-      <section class="intro"></section>
+        <h1>Current Conditions</h1>
+        <section class="alerts">
+            <h2>Alerts</h2>
+            <ul></ul>
+        </section>
 
-      <section class="info"></section>
+        <section class="visitor">
+            <h2>Visitor Services</h2>
+            <details name="current-details">
+                <summary>Visitors Centers</summary>
+                <ul></ul>
+            </details>
+        </section>
 
-      </section>
+        <section class="activities">
+            <h2>Activities</h2>
+            <details name="current-details">
+                <summary>All Activities</summary>
+                <ul></ul>
+            </details>
+        </section>
     </main>
     <footer id="park-footer"></footer>
   </body>

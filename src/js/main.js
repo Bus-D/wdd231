@@ -1,5 +1,7 @@
 import { getParkData } from "./parkService.mjs";
 import { parkInfoLinks } from "./parkService.mjs";
+import "../css/style.css";
+import "../css/home.css";
 
 async function init() {
     const parkData = await getParkData();
@@ -7,7 +9,6 @@ async function init() {
     setParkIntro(parkData);
     mediaCardTemplate(parkInfoLinks, parkData);
     setParkFooter(parkData);
-
 }
 init();
 
@@ -15,6 +16,7 @@ function setHeaderInfo(parkData) {
     // Disclaimer
     const disclaimer = document.querySelector(".disclaimer > a");
     disclaimer.href = parkData.url;
+    console.log(disclaimer.href);
     disclaimer.innerHTML = parkData.fullName;
 
     // Update Hero Info
@@ -70,6 +72,11 @@ function mediaCardTemplate(parkInfoLinks, parkData) {
 
 function setParkIntro(parkData) {
     const title = document.querySelector(".intro");
+    if (!title) {
+        console.warn("No .intro element found - skipping intro setup");
+        return;
+    }
+
     title.innerHTML = `<h1>${parkData.fullName}</h1>
     <p>${parkData.description}</p>`;
     
@@ -83,12 +90,12 @@ function setParkInfoLinks(data) {
 
 // footer
 
-function getMailingAddress(addresses) {
+export function getMailingAddress(addresses) {
     const mailing = addresses.find((address) => address.type === "Mailing");
     return mailing;
 }
 
-function getVoicePhone(phoneNumbers) {
+export function getVoicePhone(phoneNumbers) {
     const voicePhone = phoneNumbers.find(phone => phone.type === "Voice");
     return voicePhone ? voicePhone.phoneNumber : "No phone number available";
 }

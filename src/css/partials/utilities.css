@@ -14,8 +14,22 @@
 }
 
 svg {
-  background-color: var(--bs-black);
-  fill: white;
   height: 30px;
   width: 30px;
+}
+
+.alert-information {
+  color: var(--alert-information);
+}
+
+.alert-danger {
+  color: var(--alert-danger);
+}
+
+.alert-closure {
+  color: var(--alert-closure);
+}
+
+.alert-caution {
+  color: var(--alert-caution);
 }
