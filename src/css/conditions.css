@@ -31,14 +31,10 @@
 
 summary {
     list-style-type: '▲';
-    /* display: flex; */
-    justify-content: space-between;
 }
 
 details[open] > summary {
     list-style-type: '▼';
-    display: flex;
-    justify-content: space-between;
 }
 
 details[open] {
