@@ -10,6 +10,10 @@
     justify-content: space-between;
   }
 
+  #global-nav-toggle p {
+    color: var(--bs-white);
+  }
+
   .global-header__right {
     margin-top: 8px;
     display: flex;
@@ -31,6 +35,28 @@
   .global-header__right .search-icon {
     padding: 0 1rem;
     margin-top: 6px;
+  }
+
+  .global-nav-toggle {
+    background-color: var(--bs-black);
+    color: white;
+    margin-top: -20px;
+    padding: 10px;
+  }
+
+  .global-nav-toggle button {
+    background-color: var(--bs-black);
+  }
+
+  .global-nav-toggle button svg {
+    fill: var(--bs-white);
+    height: 16px;
+    width: 16px;
+  }
+
+  .global-nav-toggle a {
+    text-decoration: none;
+    color: white;
   }
 
   .global-header .icon {
