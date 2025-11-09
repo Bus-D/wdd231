@@ -37,3 +37,117 @@
   border-left: 13px solid transparent;
   border-right: 13px solid transparent;
 }
+
+.global-nav_toggle[aria-expanded="true"] .global-nav_toggle-closed {
+  display: none;
+}
+
+.global-nav_toggle[aria-expanded="true"] .global-nav_toggle-open {
+  display: flex;
+}
+
+.global-nav.show {
+  max-height: 1000px;
+}
+
+  /* Top Nav */
+  .top-nav-bar {
+    background-color: var(--bs-black);
+    display: block;
+  }
+
+  .global-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #global-nav-toggle p {
+    color: var(--bs-white);
+  }
+
+  .global-header__right {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .global-header__right button {
+    border: none;
+    background: transparent;
+    padding: .5rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    border-left: 1px solid var(--bs-grey-5);
+  }
+
+  .icon {
+    fill: currentColor;
+    width: 30px;
+    height: 30px;
+  }
+
+  .global-header__right .search-icon {
+    padding: 0 1rem;
+    margin-top: 6px;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+  }
+
+  .global-nav {
+    background-color: var(--bs-black);
+    color: white;
+    margin-top: -20px;
+    padding: 10px;
+  }
+
+  .global-nav button {
+    background-color: var(--bs-black);
+  }
+
+  .global-nav a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .global-nav svg {
+    --icon-color: white;
+    height: 20px;
+    width: 20px;
+  }
+  
+  .global-nav_toggle--closed {
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+
+  .global-nav_toggle--open {
+    display: none;
+    align-items: center;
+  }
+
+  .global-header .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .search-icon > svg {
+    margin-top: 4px;
+    margin-right: 8px;
+  }
+
+  #global-nav-toggle > svg {
+    align-self: center;
+    /* border: none; */
+    border: 1px solid var(--bs-black);
+    border-radius: 5px;
+
+  }
+
+  #global-nav-toggle > p {
+    color: white;
+  }
