@@ -1,5 +1,5 @@
 
-function enableNavigation() {
+export default function enableNavigation() {
   const menuButton = document.getElementById('global-nav-toggle');
   const menu = document.getElementById('menu');
   

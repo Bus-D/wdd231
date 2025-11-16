@@ -105,7 +105,7 @@
   }
 
   .global-nav button {
-    background-color: var(--bs-black);
+    background-color: transparent;
   }
 
   .global-nav a {
@@ -118,6 +118,19 @@
     height: 20px;
     width: 20px;
   }
+
+  .global-nav__section-heading {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 1rem 0.625rem;
+    font-size: 1.25rem;
+  }
+  .section-heading--green {
+    color: var(--bs-light-green);
+  }
+  .section-heading--blue {
+    color: var(--bs-chathams-blue-3);
+  }
   
   .global-nav_toggle--closed {
     color: white;
@@ -128,6 +141,87 @@
   .global-nav_toggle--open {
     display: none;
     align-items: center;
+  }
+
+  .global-nav__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    justify-content: space-between;
+  }
+
+  .global-nav__list li {
+    margin-bottom: 16px;
+    width: 100%;
+  }
+
+  .global-nav__split-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--bs-gray-800);
+  }
+
+  .icon {
+    transition: transform 0.5s ease-in-out
+  }
+
+  .rotate {
+    transform: rotate(180deg);
+  }
+
+  .global-nav__split-button:hover,
+  .global-nav__submenu a:hover {
+    background-color: var(--bs-gray-900);
+  }
+  .global-nav__submenu a:hover {
+    text-decoration: underline
+  }
+
+  .global-nav__submenu {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0.75rem;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  .show-submenu{
+    max-height: 500px;
+  }
+
+  @media (min-width: 525px) {
+    .global-nav__section-heading {
+      display: none;
+    }
+
+    .global-nav__list {
+      flex-direction: row;
+      padding-right: 40px;
+    }
+
+    .global-nav__split-button {
+      background-color: var(--bs-black);
+      flex-direction: column;
+      margin-top: 20px;
+    }
+
+    .global-nav__submenu {
+      position: static;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      max-height: fit-content;
+      padding-left: 0;
+      margin-top: 0.75rem;
+    }
+
+    .global-nav__split-button__toggle {
+      display: none;
+    }
   }
 
   .global-header .icon {

@@ -1,4 +1,4 @@
-import spritePath from '../images/sprite.symbol.svg';
+// import spritePath from '../images/sprite.symbol.svg';
 
 export function alertTemplate(alert) {
   let alertType = "";
