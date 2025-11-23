@@ -1,0 +1,32 @@
+body {
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+img {
+  max-width: 100%;
+}
+.logoImg {
+  border-radius: 50% 25%;
+  width: 50px;
+  height: 50px;
+  background-color: coral;
+}
+
+.product {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 480px) {
+  .product {
+    flex-direction: row;
+  }
+
+  .product__details {
+    flex-direction: column;
+    padding-left: 8px;
+  }
+}
